@@ -1,10 +1,11 @@
 import express from 'express';
-import 'dotenv/config'
+import dotenv from 'dotenv'
 import cors from 'cors';
 import user from './routes/user.js';
 import connectDB from './db/connectdb.js';
 
 const app = express();
+dotenv.config();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ limit: '10kb' }));
