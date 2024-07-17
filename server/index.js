@@ -17,6 +17,6 @@ connectDB(DATABASE_URL)
 
 app.use('/', user)
 
-app.listen(port, host, function () {
+app.listen(port, function () {
   console.log(`Server is listening at http://${host}:${port}`);
 });
