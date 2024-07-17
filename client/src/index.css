@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+body {
+  @apply h-screen w-full bg-[#111827] font-concert-one;
+  font-family: sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tool-tip::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 25px;
+  z-index: -1;
+}
+.mongoDB::after {
+  background-color: #47a248;
+}
+
+.express::after {
+  background-color: #fff;
+}
+
+.react::after {
+  background-color: #5ed3f3;
+}
+
+.node::after {
+  background-color: #8cc84b;
+}
+
+.test {
+  height: var(100vh -100px);
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100vh;
+}
+
+.blurred-border-top {
+  position: relative;
+}
+
+.blurred-border-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #2a34498a;
+  filter: blur(4px);
+}
+
+@media screen and (max-width: 768px) {
+  .tool-tip::after {
+    top: 18px;
+  }
+}
