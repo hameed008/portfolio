@@ -21,7 +21,7 @@ const getUser = async (req, res) => {
 
 const createUser = async (req, res) => {
   try {
-    console.log(req.body)
+    // console.log(req.body)
     const { name, email, message } = req.body;
     const newUser = new userModel({ name: name, email: email, message: message });
 

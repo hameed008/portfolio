@@ -8,7 +8,6 @@ import Footer from "./ui/Footer";
 
 import ParticleAnimation from "./components/ParticleAnimation";
 const App = () => {
-  console.log(import.meta.env)
   const [showAbout, setShowAbout] = useState(false)
   // console.log(showAbout)
   return (

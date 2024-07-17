@@ -35,7 +35,7 @@ const Contact = () => {
     const name = form.current.name.value;
     const email = form.current.email.value;
     const message = form.current.message.value;
-    console.log(name)
+    // console.log(name)
     if (name != "" && email != "" && message != "") {
       emailjs
         .sendForm('service_mvi06sf',
