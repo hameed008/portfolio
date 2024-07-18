@@ -6,7 +6,7 @@ const Skills = () => {
     <>
       <div className="mx-auto max-w-[1280px] mt-5">
         <Heading heading="Skills"></Heading>
-        <div className="grid w-full grid-cols-3 gap-5  lg:grid-cols-4 mt-10 mb-16">
+        <div className="grid w-full grid-cols-3 gap-5  lg:grid-cols-4 mt-5 lg:mt-16 mb-16">
           {skillsData.map((img, index) => {
             return (
               <div

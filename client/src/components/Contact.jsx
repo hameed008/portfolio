@@ -67,7 +67,7 @@ const Contact = () => {
           <div className='w-full'>
             <div className='flex items-center gap-1 text-lg text-white'>
               <FaRegUser className='' />
-              <label htmlFor="name" className='inline'>Name <span className='text-red-500 text-2xl'>*</span></label>
+              <label htmlFor="name" className='inline'>Name <span className='text-red-500 text-[12px] lg:text-xl'>*</span></label>
             </div>
             <input type="text" id="name" name="name" placeholder='Enter your name' className='w-full p-2 mt-2 text-[#111827] rounded-md outline-none bg-gray-100 border-[2px] border-gray-100 focus:border-red-500' onChange={(e) => { handleOnChange(e) }} />
           </div>
@@ -75,7 +75,7 @@ const Contact = () => {
           <div className='w-full'>
             <div className='flex items-center gap-1 text-lg text-white'>
               <HiOutlineAtSymbol className='' />
-              <label htmlFor="email">Email <span className='text-red-500 text-2xl'>*</span></label>
+              <label htmlFor="email">Email <span className='text-red-500 text-[12px] lg:text-xl'>*</span></label>
             </div>
             <input type="email" id="email" name="email" placeholder='Enter your email' className="w-full p-2 mt-2 text-[#111827] rounded-md outline-none border-[2px]  border-gray-100 focus:border-red-500 bg-gray-100" onChange={(e) => { handleOnChange(e) }} />
           </div>
@@ -83,7 +83,7 @@ const Contact = () => {
           <div className='w-full'>
             <div className='flex items-center gap-1 text-lg text-white'>
               <FiMessageSquare className='' />
-              <label htmlFor="">Message <span className='text-red-500 text-2xl'>*</span></label>
+              <label htmlFor="">Message <span className='text-red-500 text-[12px] lg:text-xl'>*</span></label>
             </div>
             <textarea id="message" name="message" rows="4" cols="50" placeholder='Type your messege here' className="w-full p-2 mt-2 text-[#111827] rounded-md outline-none border-[2px]  border-gray-100 focus:border-red-500 bg-gray-100" onChange={(e) => { handleOnChange(e) }} />
           </div>

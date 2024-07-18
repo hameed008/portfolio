@@ -4,7 +4,7 @@ import Logo from "../components/Logo";
 import SocialMedia from "../components/SocialMedia";
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center p-5 bg-[#293140] rounded-tl-[70px] rounded-tr-[70px] lg:rounded-tl-[100px] lg:rounded-tr-[100px]">
+    <div className="flex flex-col items-center bg-[#293140] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
       <Copyright></Copyright>
       <Logo></Logo>
       <SocialMedia></SocialMedia>

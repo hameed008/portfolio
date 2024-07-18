@@ -1,17 +1,18 @@
 import React from 'react'
+import { RiShareBoxLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+
+
 const ProjectImage = ({ project, justify, order }) => {
   return (
-    // <div className="project-img w-[85%] sm:w-[70%] md:w-full xl:w-[50%]  max-h-[250px] 2xl:max-h-[350px] shadow-xl bg-white text-white z-10 mx-auto group pt-2">
-    <div className={` w-full project-img-wrapper ${order} lg:order-1 z-10 lg:flex`} style={{ justifyContent: `${justify}` }}>
-      <a href=""> <img src={project.url} alt="" className=' w-[400px] md:w-[450px] lg:w-[500px] rounded-sm hover:scale-[1.1] duration-200 mx-auto' /></a>
-
-      {/* //   {/* <div className='p-5 w-full flex justify-between bg-gray-500'>
-    //     <button>{project.button[0]}</button>
-    //     <button>{project.button[1]}</button>
-    //   </div> 
-    </div> */}
+    <div className={` w-full project-img-wrapper ${order} lg:order-1 z-10 mb-4 lg:mt-0 lg:flex flex-col gap-3`} style={{ alignItems: `${justify}` }}>
+      <a href=""> <img src={project.url} alt="" className=' w-[400px] md:w-[450px] lg:w-[500px] hover:scale-[1.1] duration-200 mx-auto' /></a>
+      <div className='w-full md:w-[450px] mx-auto lg:mx-0 flex gap-4 lg:gap-5 text-white text-md lg:text-2xl mt-1 lg:mt-0'>
+        <p className='text-[#FC815C]'>{project.name}</p>
+        <button className='hover:scale-[1.1] hover:text-red-500'><a href={project.liveLink} target='blank'><RiShareBoxLine></RiShareBoxLine></a></button>
+        <button className='hover:scale-[1.1] hover:text-red-500'><a href={project.sourceLink} target='blank'><FaGithub></FaGithub></a></button>
+      </div>
     </div>
   )
 }
-
 export default ProjectImage

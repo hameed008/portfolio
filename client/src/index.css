@@ -62,4 +62,7 @@ body {
   .tool-tip::after {
     top: 18px;
   }
+  #tsparticles {
+    height: 80vh;
+  }
 }
