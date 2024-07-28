@@ -28,7 +28,6 @@ const About = ({ showAbout, setShowAbout }) => {
     "#express",
     "#mongoDB",
     "#mongoose",
-    "#ejs",
     "#html",
     "#css",
     "#sass",
