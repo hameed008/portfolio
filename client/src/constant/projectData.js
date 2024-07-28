@@ -19,7 +19,18 @@ const projectData = [
     "liveLink": "https://weather.hameedkhan.tech/",
     "sourceLink": "https://github.com/hameed008/weather-app"
 
+  },
+
+  {
+    name: "CRUD App",
+    category: "CRUD",
+    description: "It's a simple CRUD (Create, Read, Update, Delete) app that allows users to perform basic data management operations. Users can create new records, view existing records, update them, and delete them as needed. This app provides a basic interface for managing information in a database.",
+    techStack: ["#MongoDB", "#Express.js", "#ejs", "#Node.js", "#Bootstarp"],
+    url: "crud.svg",
+    "liveLink": "https://ejs-test-bxhv.onrender.com/",
+    "sourceLink": "https://github.com/hameed008/ejs-test"
   }
+
 
 ]
 
