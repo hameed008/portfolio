@@ -126,7 +126,7 @@ const About = ({ showAbout, setShowAbout }) => {
           </div>
           <div className="">
             <img
-              src="src\assets\coder.svg"
+              src="coder.svg"
               alt=""
               className="hidden md:block"
             />
